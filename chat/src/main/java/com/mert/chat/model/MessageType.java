@@ -1,4 +1,4 @@
-package com.mert.chat.chat;
+package com.mert.chat.model;
 
 public enum MessageType {
     CHAT,
