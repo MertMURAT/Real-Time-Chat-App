@@ -9,6 +9,7 @@ public class ChatMessage {
     private String content;
     private String sender;
 
+    public ChatMessage() {
     }
 
     public ChatMessage(MessageType type, String content, String sender) {
