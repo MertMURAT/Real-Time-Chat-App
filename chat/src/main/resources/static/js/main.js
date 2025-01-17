@@ -27,12 +27,12 @@ function onConnected(){
         JSON.stringify({sender: username, type: 'JOIN'}));
 
     // Hide connecting message
-    $('#connecting').addClass('d-none');
+    $('.connecting').addClass('d-none');
 }
 
 function onError(error){
     // Show error message
-    $('#connecting').text('Could not connect to WebSocket server. Please refresh this page to try again!').css('color', 'red');
+    $('.connecting').text('Could not connect to WebSocket server. Please refresh this page to try again!').css('color', 'red');
 }
 
 function sendMessage(event)
@@ -64,5 +64,5 @@ function onMessageReceived(payload){
 }
 
 // Add EventListener
-$("username-form").on("submit", connect);
-$("message-form").on("submit", sendMessage);
+$("#username-form").on("submit", connect);
+$("#message-form").on("submit", sendMessage);
